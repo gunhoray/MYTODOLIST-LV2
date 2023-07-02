@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-// Inputbox
 export const StyledInputBox = styled.div`
     display: flex;
     align-items: center;
@@ -21,7 +20,6 @@ export const StyledPostBox = styled.div`
     border-style: solid;
 `;
 
-// title
 export const Title = styled.h1`
     background-color: black;
     border-color: black;
@@ -36,7 +34,6 @@ export const Title = styled.h1`
     }
 `;
 
-//wholebox
 export const Container = styled.div`
     max-width: 1200px;
     min-width: 800px;
@@ -44,7 +41,6 @@ export const Container = styled.div`
     border-width: 6px;
 `;
 
-//centered-container
 export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
@@ -52,7 +48,6 @@ export const Wrapper = styled.div`
     height: 100vh;
 `;
 
-// . addbutton
 export const BtnAdd = styled.button`
     background-color: black;
     border: solid;
@@ -61,7 +56,6 @@ export const BtnAdd = styled.button`
     font-size: 35px;
 `;
 
-// . workbutton
 export const BtnWork = styled.button`
     background-color: white;
     border: none;
@@ -71,12 +65,10 @@ export const BtnWork = styled.button`
     width: 48%;
 `;
 
-//.workbuttonbox
 export const BtnWorkBox = styled.div`
     text-align: center;
 `;
 
-// input[type=text]
 export const Input = styled.input`
     width: 40%;
     padding: 5px 5px;
@@ -87,7 +79,6 @@ export const Input = styled.input`
     font-size: 20px;
 `;
 
-//inprogressbox
 export const InProgressBox = styled.div`
     text-align: center;
     font-size: 30px;
@@ -97,7 +88,6 @@ export const InProgressBox = styled.div`
     font-weight: bold;
 `;
 
-//.completedbox
 export const CompletedBox = styled.div`
     padding-bottom: 5px;
     text-align: center;
@@ -107,7 +97,6 @@ export const CompletedBox = styled.div`
     font-weight: bold;
 `;
 
-// contentsize
 export const Content = styled.div`
     font-size: 20px;
 `;
