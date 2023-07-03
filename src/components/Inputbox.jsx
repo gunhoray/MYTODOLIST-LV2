@@ -1,13 +1,16 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
+import { StyledInputBox, Input, BtnAdd } from "../Styled";
 
-const InputBox = ({addBtnHandler}) => {
+const InputBox = ({ addBtnHandler }) => {
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
 
-
-    const [title,setTitle]=useState('');
-    const [content,setContent]=useState('');
-    
-    const titleHandler=(event)=>{setTitle(event.target.value)};
-    const contentHandler=(event)=>{setContent(event.target.value)};
+    const titleHandler = (event) => {
+        setTitle(event.target.value);
+    };
+    const contentHandler = (event) => {
+        setContent(event.target.value);
+    };
 
     const handleClick = () => {
         addBtnHandler(title, content);
@@ -15,12 +18,13 @@ const InputBox = ({addBtnHandler}) => {
         setContent("");
       };
 
+
     return (
-        <div className='inputsection'>
-        TITLE  <input type='text' value={title} onChange={titleHandler}/>
-        CONTENT  <input type='text' value={content} onChange={contentHandler}/>
-        <button className="addbutton"onClick={handleClick}>+</button>
-      </div>
+        <StyledInputBox>
+            TITLE <Input type="text" value={title} onChange={titleHandler} />
+            CONTENT <Input type="text" value={content} onChange={contentHandler} />
+            <BtnAdd onClick={handleClick}>+</BtnAdd>
+        </StyledInputBox>
     );
 };
 
