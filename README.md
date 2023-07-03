@@ -30,6 +30,12 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
   * Add, delete, completed, not completed 버튼 기능들 구현
   * alert로 delete에 대한 confirm
   * alert로 빈값 추가에 대한 거부
+  * 상세페이지 구현
+  * 선택된 포스트의 상세페이지로 이동하는 기능
+  * 상세페이지에서 다시 main page로 돌아가는 기능
+  * 새로고침을 하여 id를 잃었을 때, 다시 main page로 돌아가는 기능
+  * 겹치지 않는 고유의 ID 값 부여
+  * 입력 중에 상세페이지 접속 후, main page로 돌아올시에 input값 초기화 
 
 ## blueprint of the project
 
@@ -61,3 +67,4 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
 * Refactoring todos with redux ⭐️
 * Refactoring pages with react-router-dom. constructing pages, and link them with right path. ⭐️
 * Refactoring existed css with styled-components⭐️
+* Providing each posts with a unique key : using uuid( ) ⭐️
