@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import {detailedBtn, detailedContent, detailedTitle, detailedId, detailedBox} from '../Styled'
+import {DetailedBtn, DetailedContent, DetailedTitle, DetailedId, DetailedBox, NotFoundBox} from '../Styled'
 
 
 function Details() {
@@ -15,27 +15,29 @@ function Details() {
   const matchTodo = todos.find((todo) => todo.id === params.id);
   if (!matchTodo) {
     return (
-      <div>
-        <h3>Todo not found</h3>
-        <button onClick={() => backToHome('/')}>Back to Home</button>
-      </div>
+      <NotFoundBox>
+          <DetailedTitle >
+           sorry, To-Do not found
+          </DetailedTitle>
+        <DetailedBtn onClick={() => backToHome('/')}>Let's go back Home</DetailedBtn>
+      </NotFoundBox>
     );
   }
 
   // console.log(matchTodo.id); 
 
   return (
-    <detailedBox key={matchTodo.id}>
-      <detailedId>ID : {matchTodo.id} 
-       <detailedBtn  onClick={() => backToHome('/')}>X</detailedBtn> 
-       </detailedId>
-          <detailedTitle >
+    <DetailedBox key={matchTodo.id}>
+      <DetailedId>ID : {matchTodo.id} 
+       <DetailedBtn  onClick={() => backToHome('/')}>X</DetailedBtn> 
+       </DetailedId>
+          <DetailedTitle >
             {matchTodo.title} 
-          </detailedTitle>
-          <detailedContent>
+          </DetailedTitle>
+          <DetailedContent>
             {matchTodo.content}
-          </detailedContent>
-    </detailedBox>
+          </DetailedContent>
+    </DetailedBox>
   );
 }
 

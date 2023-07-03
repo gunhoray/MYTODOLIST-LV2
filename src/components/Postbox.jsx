@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { StyledPostBox, BtnWork, BtnWorkBox, Content } from "../Styled";
+import { StyledPostBox, BtnWork, BtnWorkBox, Content, PostBtn, PostTitle } from "../Styled";
 const PostBox = ({postInput, handleToggleBox, handleDeleteBox}) => {
 
 const navigate = useNavigate();
@@ -10,9 +10,9 @@ const goToDetail = (id) => {
 };
     return (
         <StyledPostBox key={postInput.id}>
-             <div>{postInput.title}
-                <button onClick={() => goToDetail(postInput.id)}>+</button>
-            </div>
+             <PostTitle>{postInput.title}
+                <PostBtn onClick={() => goToDetail(postInput.id)}>+</PostBtn>
+            </PostTitle>
             <Content>{postInput.content}</Content>
             <BtnWorkBox>
                 <BtnWork onClick={() => handleDeleteBox(postInput.id)}>DELETE</BtnWork>

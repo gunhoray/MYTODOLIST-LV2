@@ -101,14 +101,14 @@ export const Content = styled.div`
     font-size: 20px;
 `;
 
-export const detailedBox = styled.div`
+export const DetailedBox = styled.div`
 background-color: white;
-padding-bottom: 5px;
+padding-bottom: 0%;
 border-width: 6px;
 border-style: solid;
 `;
 
-export const detailedId = styled.div`
+export const DetailedId = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,17 +119,22 @@ export const detailedId = styled.div`
     background-color: black;
 `;
 
-export const detailedTitle = styled.div`
+export const DetailedTitle = styled.div`
     font-size: 30px;
     background-color: white;
     font-weight: bold;
 `;
 
-export const detailedContent = styled.div`
+export const DetailedContent = styled.div`
+    background-color: black;
+    color: white;
+    border: solid;
+    border-color: black;
     font-size: 20px;
+    font-weight: bold;
 `;
 
-export const detailedBtn = styled.button`
+export const DetailedBtn = styled.button`
     margin-left: auto;
     background-color: black;
     border: solid;
@@ -137,4 +142,31 @@ export const detailedBtn = styled.button`
     color: white;
     font-size: 20px;
     cursor: pointer;
+`;
+
+export const PostBtn = styled.button`
+    background-color: black;
+    border: solid;
+    border-color: black;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+`;
+
+export const PostTitle = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+`;
+
+export const NotFoundBox = styled.div`
+ display: flex;
+background-color: black;
+color: black;
+padding-bottom: 5px;
+border-width: 6px;
+border-style: solid;
 `;
