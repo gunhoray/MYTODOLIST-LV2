@@ -34,23 +34,26 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
 ## blueprint of the project
 
 * components :
-  * Inputbox.jsx
-  * Postbox.jsx
+  * Inputbox.jsx : Manages Title & Content inputs and "add" button
+  * Postbox.jsx : Manages rendering posts(todos) and give them a unique key(id)
 
 * pages :
-  * Details.jsx
-  * Home.jsx
+  * Details.jsx : Render selected post's details, and when refreshed explains the loss of the post
+  * Home.jsx : Render main-page of this project, has "in progress..." and "completed" section
 
 * redux : contains config & modules folders
-  * config :
-    * configStore.js
-  * modules :
-    * todos.jsx
+  * config 
+    * configStore.js : the store, contains rootReducer (todos)
+  * modules 
+    * todos.jsx : contains the actions of todos 
 
 * shared : constructing direction of pages
-  * Router.js
-* App.jsx : IMPORTS Router / GlobalStyle / { Title, Container, Wrapper}
-* GlobalStyle.js : styled-components for Global environment 
+  * Router.js : contains the path of Home.jsx & Details.jsx
+    
+* App.jsx : The top component, contains GlobalStyle & Router
+        
+* GlobalStyle.js : styled-components for Global environment
+  
 * Styled.js : styled-components for Elements 
  
 
