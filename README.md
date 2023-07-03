@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a16c-69bbd86c7cb8
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# [MY TO-DO LIST](https://mytodolist-lv-2.vercel.app/) 
+##### by gunhoray & makepin2r using Javascript, React, Html, css
+### by makepin2r
+  * Refactoring whole homepage with redux
+  * Organized and constructed Styled-components
+  * Refactoring existed code for better efficiency
+### by gunhoray
+  * Constructed pages and linked them with path wth react-router-dom
+  * Merged codes together from gunhoray & makepin2r, and resolved conflicts between them
+  * Organized final results 
 
-In the project directory, you can run:
+## assignments of this project
+  * todos 데이터는 리덕스를 사용해서 전역으로 상태를 관리합니다.
+  * todos 모듈은 **Ducks 패턴**으로 구현합니다.
+  * 메인 페이지
+  * Todo를 추가하면 제목 input과 내용 input은 다시 빈 값이 되도록 구현합니다.
+  * input에 값이 있는 상태에서 상세페이지로 이동하는 경우, input의 value가 초기화 되도록 구현합니다.
+  * Todo의 완료상태가 true이면, 상태 버튼의 라벨을 “취소”, false 이면 라벨을 “완료” 로 보이도록 구현합니다.
+  * 상세보기 클릭하면 Todo의 상세 페이지로 이동합니다.
+  * 상세 페이지의 디자인과 화면 구성 : Todo의 ID / Todo의 제목 / Todo의 내용 / 이전으로 버튼
+  * Todo Id 생성 시 todos.length 사용해서 생성하지 않습니다. : uuid() 사용했음
+  * Main packages used : redux & styled-components & react-router-dom  
 
-### `yarn start`
+## funtions of this project
+  * 문자타입 제목, 컨텐츠 기입
+  * in progress...와 completed으로 to-do post의 진행상황을 분리한 구조
+  * Add, delete, completed, not completed 버튼 기능들 구현
+  * alert로 delete에 대한 confirm
+  * alert로 빈값 추가에 대한 거부
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## blueprint of the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* components :
+  * Inputbox.jsx
+  * Postbox.jsx
 
-### `yarn test`
+* pages :
+  * Details.jsx
+  * Home.jsx
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* redux : contains config & modules folders
+  * config :
+    * configStore.js
+  * modules :
+    * todos.jsx
 
-### `yarn build`
+* shared : constructing direction of pages
+  * Router.js
+* App.jsx : IMPORTS Router / GlobalStyle / { Title, Container, Wrapper}
+* GlobalStyle.js : styled-components for Global environment 
+* Styled.js : styled-components for Elements 
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Difficulties encountered during this project
+* Refactoring todos with redux ⭐️
+* Refactoring pages with react-router-dom. constructing pages, and link them with right path. ⭐️
+* Refactoring existed css with styled-components⭐️
