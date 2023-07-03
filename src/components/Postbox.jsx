@@ -1,9 +1,18 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 const PostBox = ({postInput, handleToggleBox, handleDeleteBox}) => {
 
+const navigate = useNavigate();
+
+const goToDetail = (id) => {
+  navigate(`/details/${id}`);
+};
     return (
         <div key={postInput.id} className="post-style">
             <div>  
                 {postInput.title}
+                <button onClick={() => goToDetail(postInput.id)}>+</button>
             </div>
             <div className='contentsize'>
                 {postInput.content}
@@ -19,4 +28,3 @@ const PostBox = ({postInput, handleToggleBox, handleDeleteBox}) => {
 
 export default PostBox;
 
-// text-transform

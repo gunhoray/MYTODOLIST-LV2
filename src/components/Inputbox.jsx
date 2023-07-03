@@ -11,6 +11,8 @@ const InputBox = ({addBtnHandler}) => {
 
     const handleClick = () => {
         addBtnHandler(title, content);
+        setTitle("");
+        setContent("");
       };
 
     return (
