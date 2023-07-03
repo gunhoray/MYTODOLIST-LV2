@@ -100,3 +100,41 @@ export const CompletedBox = styled.div`
 export const Content = styled.div`
     font-size: 20px;
 `;
+
+export const detailedBox = styled.div`
+background-color: white;
+padding-bottom: 5px;
+border-width: 6px;
+border-style: solid;
+`;
+
+export const detailedId = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+    border-color: black;
+    color: white;
+    font-size: 10px;
+    background-color: black;
+`;
+
+export const detailedTitle = styled.div`
+    font-size: 30px;
+    background-color: white;
+    font-weight: bold;
+`;
+
+export const detailedContent = styled.div`
+    font-size: 20px;
+`;
+
+export const detailedBtn = styled.button`
+    margin-left: auto;
+    background-color: black;
+    border: solid;
+    border-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+`;

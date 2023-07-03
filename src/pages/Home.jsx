@@ -6,6 +6,7 @@ import uuid from "react-uuid";
 import InputBox from '../components/Inputbox';
 import PostBox from '../components/Postbox'
 
+import { InProgressBox, CompletedBox } from '../Styled';
 
 
 function Home() {
@@ -56,9 +57,11 @@ function Home() {
     };
   return (
     <div>
+    
     <InputBox addBtnHandler={addBtnHandler} />
-    <div className="inprogressbox">in progress...</div>
-    <div className="postbox-style">
+    <InProgressBox>in progress...</InProgressBox>
+
+    <div>
         {todos.todos
             .filter((item) => item.isDone === false)
             .map(function (postInput) {
@@ -72,8 +75,9 @@ function Home() {
                 );
             })}
     </div>
-    <div className="completedbox">completed</div>
-    <div className="postbox-style">
+ 
+    <CompletedBox>completed</CompletedBox>
+    <div>
         {todos.todos
             .filter((item) => item.isDone === true)
             .map(function (postInput) {
@@ -86,8 +90,8 @@ function Home() {
                     />
                 );
             })}
+        </div>
     </div>
-    </div>
-  )
+     );
 }
 export default Home;

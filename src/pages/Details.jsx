@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import {detailedBtn, detailedContent, detailedTitle, detailedId, detailedBox} from '../Styled'
+
 
 function Details() {
   const todos = useSelector((state) => state.todos.todos);
@@ -23,15 +25,17 @@ function Details() {
   // console.log(matchTodo.id); 
 
   return (
-    <div>
-      <div>ID : {matchTodo.id}  <button onClick={() => backToHome('/')}>X</button> </div>
-          <div>
-          {matchTodo.title} 
-          </div>
-              <div className='contentsize'>
-                  {matchTodo.content}
-              </div>
-    </div>
+    <detailedBox key={matchTodo.id}>
+      <detailedId>ID : {matchTodo.id} 
+       <detailedBtn  onClick={() => backToHome('/')}>X</detailedBtn> 
+       </detailedId>
+          <detailedTitle >
+            {matchTodo.title} 
+          </detailedTitle>
+          <detailedContent>
+            {matchTodo.content}
+          </detailedContent>
+    </detailedBox>
   );
 }
 
