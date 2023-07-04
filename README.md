@@ -12,7 +12,7 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
   * Merged codes together from gunhoray & makepin2r, and resolved conflicts between them
   * Organized final results 
 
-## assignments of this project
+## Assignments of this project
   * todos 데이터는 리덕스를 사용해서 전역으로 상태를 관리합니다.
   * todos 모듈은 **Ducks 패턴**으로 구현합니다.
   * 메인 페이지
@@ -24,7 +24,7 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
   * Todo Id 생성 시 todos.length 사용해서 생성하지 않습니다. : uuid() 사용했음
   * Main packages used : redux & styled-components & react-router-dom  
 
-## funtions of this project
+## Funtions of this project
   * 문자타입 제목, 컨텐츠 기입
   * in progress...와 completed으로 to-do post의 진행상황을 분리한 구조
   * Add, delete, completed, not completed 버튼 기능들 구현
@@ -52,7 +52,7 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
     * 작업할 기능별로 `[작업자명]-[구현기능]` 형태의 브랜치를 생성하여 작업한다.
     * 작업 완료시 master 브랜치에 pull request하고, 페어는 리뷰어가 되어 점검 후 머지한다.
 
-## blueprint of the project
+## Blueprint of the project
 
 * components :
   * Inputbox.jsx : Manages Title & Content inputs and "add" button
