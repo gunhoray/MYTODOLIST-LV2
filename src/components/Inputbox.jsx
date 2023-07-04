@@ -16,8 +16,7 @@ const InputBox = ({ addBtnHandler }) => {
         addBtnHandler(title, content);
         setTitle("");
         setContent("");
-      };
-
+    };
 
     return (
         <StyledInputBox>

@@ -102,10 +102,10 @@ export const Content = styled.div`
 `;
 
 export const DetailedBox = styled.div`
-background-color: white;
-padding-bottom: 0%;
-border-width: 6px;
-border-style: solid;
+    background-color: white;
+    padding-bottom: 0%;
+    border-width: 6px;
+    border-style: solid;
 `;
 
 export const DetailedId = styled.div`
@@ -163,10 +163,10 @@ export const PostTitle = styled.div`
 `;
 
 export const NotFoundBox = styled.div`
- display: flex;
-background-color: black;
-color: black;
-padding-bottom: 5px;
-border-width: 6px;
-border-style: solid;
+    display: flex;
+    background-color: black;
+    color: black;
+    padding-bottom: 5px;
+    border-width: 6px;
+    border-style: solid;
 `;
