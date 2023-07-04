@@ -37,6 +37,21 @@ https://github.com/gunhoray/MYTODOLIST-LV2/assets/88648468/a56dc047-5e0d-420a-a1
   * 겹치지 않는 고유의 ID 값 부여
   * 입력 중에 상세페이지 접속 후, main page로 돌아올시에 input값 초기화 
 
+## Code Convention 
+  * 폴더/컴포넌트 구조
+    * 폴더 구조 및 컴포넌트 구조는 강의에서 제시된 바를 따랐음.
+    * Styled Component의 경우 src 폴더에 아래 두 파일로 관리
+      * GlobalStyle.js : 전역 스타일링
+      * Styled.js : 컴포넌트별 필요한 스타일링은 한 파일에 모두 모아서 작업 후, 필요한 요소만 컴포넌트별로 import해서 사용
+
+  * 변수명, 함수명
+    * 이벤트 핸들링에 사용되는 함수는 `handle`로 시작한다.
+    * 변수명은 camel case로 작성한다.
+
+  * Git Flow
+    * 작업할 기능별로 `[작업자명]-[구현기능]` 형태의 브랜치를 생성하여 작업한다.
+    * 작업 완료시 master 브랜치에 pull request하고, 페어는 리뷰어가 되어 점검 후 머지한다.
+
 ## blueprint of the project
 
 * components :
